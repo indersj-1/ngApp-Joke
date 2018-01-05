@@ -13,7 +13,7 @@ export class JokeFormComponent implements OnInit {
   }
   @Output() jokeCreated = new EventEmitter<Joke>();
   createJoke(setup:string,punchline:string){
- 	 this.jokeCreated.emit(new Joke(setup,punchline))
+ 	 this.jokeCreated.emit(new Joke(setup,punchline,true))
   }
 
 }
